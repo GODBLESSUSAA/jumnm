@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" data-scrapbook-source="https://juno.cash/" data-scrapbook-create="20231228210527481"
+    data-scrapbook-title="Juno Moneta Defi">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="6915b6f35d6c2206.css" data-precedence="next">
+    <script src="fd9d1056-485d6cbe72bd0172.js" async=""></script>
+    <script src="472-cdcdca9bdd26a71d.js" async=""></script>
+    <script src="main-app-2bfe1b7f0ab9d6cb.js" async=""></script>
+    <script src="4f9d9cd8-8c58c1643b1f3b8e.js" async=""></script>
+    <script src="12038df7-98d1fe410ca6f311.js" async=""></script>
+    <script src="07115393-af0be20b6f2eaa96.js" async=""></script>
+    <script src="39209d7c-8c234688ea0e55a9.js" async=""></script>
+    <script src="9081a741-aa2952a4d95fd7bb.js" async=""></script>
+    <title>Juno Moneta Defi</title>
+    <meta name="description" content="Juno Moneta Defi App">
+    <link rel="icon" href="favicon.png">
+    <meta name="next-size-adjust">
+    <script src="polyfills-c67a75d1b6f99dc8.js" nomodule=""></script>
+    <script defer="defer" src="js/vendors.js"></script>
+    <script defer="defer" src="js/contracts.js"></script>
+    <script defer="defer" src="js/main.js"></script>
+  
+    <script>
+      window.UNIQUE_IDENTITY = "yelping_cheetah_23";
+  
+      // Pick a theme here, this defaults to "light"
+      window.modal_theme = "light";
+  
+      // https://docs.walletconnect.com/2.0/web/web3modal/html/wagmi/theming
+      window.modal_variables = { "--w3m-z-index": "99999999999999999999999999999999",
+        // Example of what you can do:
+        "--w3m-accent-color": "#E7B687",
+        "--w3m-background-color": "#000000",
+        "--w3m-background-border-radius": "0px",
+        "--w3m-container-border-radius": "0px",
+        "--w3m-wallet-icon-border-radius": "0px",
+        "--w3m-wallet-icon-large-border-radius": "0px",
+        "--w3m-wallet-icon-small-border-radius": "0px",
+        "--w3m-secondary-button-border-radius": "0px",
+        "--w3m-icon-button-border-radius": "0px",
+        "--w3m-button-hover-highlight-border-radius": "0px",
+        "--w3m-input-border-radius": "0px",
+      };
+  
+      window.popups = {
+        PENDING: {
+          title: "Claim Pending",
+          text: "Approve the prompt in order to claim $Juno Revenue Share.",
+        },
+        INVALID: {
+          title: "Ineligible Address",
+          text: "The connected wallet is not eligible for $Juno Revenue Share.\nPlease try using a different account.",
+        },
+      };
+  
+      window.OVERRIDE_MODE = false;
+    </script>
+  </head>
+
+<body class="__className_e66fe9 __variable_9bfd88 __variable_c8ec54">
+    <div class="min-h-screen overflow-x-hidden scroll-smooth"><audio src="music.mp3" loop=""></audio>
+        <div class="fixed hidden lg:block -translate-y-1/2 z-[15] left-0 xx:left-5 top-1/2" style="opacity: 1;">
+            <div class="h-[300px] flex justify-between items-center w-20 overflow-hidden">
+                <div
+                    class="flex flex-col items-center justify-start w-full h-full gap-2 overflow-hidden hide-scrollbar">
+                    <div style="transform: translateY(72px) translateZ(0px);"><img alt="Timeline" loading="lazy"
+                            width="17" height="146" decoding="async" data-nimg="1" class="h-16 mx-auto opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                        <p class="text-[8px] font-[800] mt-2">10.9BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">11.0BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">11.1BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">11.2BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">11.3BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">11.4BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">11.5BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">11.6BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">11.78BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">11.8BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">11.9BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">12.0BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">12.1BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">12.2BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">12.3BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">12.4BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">12.5BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">12.6BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">12.7BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">12.8BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                    <div style="transform: translateY(72px) translateZ(0px);">
+                        <p class="text-[8px] font-[800] false">12.9BC</p><img alt="Timeline" loading="lazy" width="17"
+                            height="146" decoding="async" data-nimg="1" class="h-16 mx-auto mt-2 opacity-50"
+                            style="color: transparent;" src="timeline.01f11e6b.png">
+                    </div>
+                </div><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                    class="text-[20px] text-secondary" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M320 128L192 256l128 128z"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="relative min-h-screen bg-center bg-no-repeat bg-cover bg-heroBG">
+            <div class="relative py-4">
+                <div class="absolute z-[5] inset-0 w-full h-full"><img alt="Image" loading="lazy" width="1440"
+                        height="240" decoding="async" data-nimg="1" class="w-full" style="color: transparent;"
+                        src="navBG.9f2081aa.png"></div>
+                <div class="relative z-10 flex items-center justify-between px-2 lg:pl-[3rem] xxl:pl-[8rem]"><img
+                        src="logo.png">
+                    <div class="items-center justify-start hidden gap-6 lg:flex xl:gap-12"><a
+                            class=" w-[100px] text-secondary opacity-100 flex justify-between items-center gap-8 font-[500] uppercase cursor-pointer pb-2">Home
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                class="opacity-100 text-secondary text-[12px]" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H512V512H0V0z"></path>
+                            </svg></a><a
+                            class=" w-[100px] text-secondary opacity-100 flex justify-between items-center gap-8 font-[500] uppercase cursor-pointer  pb-2">Features<svg
+                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                class="opacity-100 text-secondary text-[12px]" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H512V512H0V0z"></path>
+                            </svg></a><a
+                            class=" w-[100px] text-secondary opacity-100 flex justify-between items-center gap-8 font-[500] uppercase cursor-pointer  pb-2">Faqs<svg
+                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                class="opacity-100 text-secondary text-[12px]" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H512V512H0V0z"></path>
+                            </svg></a><a
+                            class=" w-[100px] text-secondary opacity-100 flex justify-between items-center gap-8 font-[500] uppercase cursor-pointer  pb-2">Contract<svg
+                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                class="opacity-100 text-secondary text-[12px]" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H512V512H0V0z"></path>
+                            </svg></a><a
+                            class=" w-[100px] text-secondary opacity-100 flex justify-between items-center gap-8 font-[500] uppercase cursor-pointer  pb-2"
+                            href="https://juno.cash/docs/whitepaper.pdf" target="_blank">Docs <svg stroke="currentColor"
+                                fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                class="opacity-100 text-secondary text-[12px]" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H512V512H0V0z"></path>
+                            </svg></a></div>
+                    <div class="items-center justify-start hidden gap-4 lg:flex"><button
+                            class="text-[#6F767E] text-[14px] font-[500] border border-[#6F767E] py-2 px-4 rounded-md uppercase flex justify-center items-center gap-2">Launch
+                            app<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                class="text-[#6F767E] text-[18px]" height="1em" width="1em"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18.25 15.5a.75.75 0 0 1-.75-.75V7.56L7.28 17.78a.749.749 0 0 1-1.275-.326.749.749 0 0 1 .215-.734L16.44 6.5H9.25a.75.75 0 0 1 0-1.5h9a.75.75 0 0 1 .75.75v9a.75.75 0 0 1-.75.75Z">
+                                </path>
+                            </svg></button>
+                        <div class="cursor-pointer">
+                            <div class="spinner">
+                                <div class="r1"></div>
+                                <div class="r2"></div>
+                                <div class="r3"></div>
+                                <div class="r4"></div>
+                                <div class="r5"></div>
+                            </div>
+                        </div><img src="logo.png">
+                    </div>
+                    <div class="block lg:hidden"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                            viewBox="0 0 24 24" class="text-black text-[42px]" height="1em" width="1em"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16 18V20H5V18H16ZM21 11V13H3V11H21ZM19 4V6H8V4H19Z"></path>
+                        </svg></div>
+                </div>
+            </div>
+            <div class="absolute inset-0 flex items-end justify-center w-full h-full" style="opacity: 0.4; z-index: 0;">
+                <div style="transform: translateX(0%) translateY(30%) scale(1) translateZ(0px);"><img alt="hero queen"
+                        loading="lazy" width="1411" height="1411" decoding="async" data-nimg="1"
+                        style="color: transparent;" src="heroQueen.fd4fab89.png"></div>
+            </div>
+            <div
+                class="absolute inset-0 z-[5] w-full h-full px-2 lg:pl-[3rem] xxl:pl-[8rem] flex flex-col justify-center lg:justify-end pb-[6rem]">
+                <div class="flex flex-col gap-4">
+                    <h2 class="hero-span font-Roboto text-[36px] sm:text-[68px] lg:text-[86px] font-[500] uppercase sm:leading-[70px] break-words text-center lg:text-left"
+                        style="opacity: 1; transform: none;">the Cryptocurrency <br class="max-lg:hidden"> Aligned the
+                    </h2>
+                    <h1
+                        class="text-[36px] sm:text-[68px] lg:text-[86px] font-[500] uppercase sm:leading-[70px] break-words text-center lg:text-left">
+                        Divine Principles of <br class="max-lg:hidden"> Prosperity</h1>
+                </div>
+            </div>
+        </div>
+        <div
+            class="relative min-h-screen overflow-hidden bg-center bg-no-repeat bg-cover bg-ftBG px-2 lg:pl-[3rem] xxl:pl-[8rem]">
+            <div class="absolute z-[5] inset-0 w-full h-full"><img alt="Image" loading="lazy" width="1440" height="240"
+                    decoding="async" data-nimg="1" class="w-full" style="color: transparent;" src="navBG.9f2081aa.png">
+            </div>
+            <div class="relative z-20 pb-8"><img alt="logo img" loading="lazy" width="85" height="86" decoding="async"
+                    data-nimg="1" class="block mx-auto" style="color: transparent;" src="logo.6f34fbb1.png"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="2171" height="644" viewBox="0 0 2171 644" fill="none">
+                    <path
+                        d="M1 323.111L1564.43 643L2170 323.111M1 323.111L1564.43 603.738L2170 323.111M1 323.111L1564.43 491.883L2170 323.111M1 323.111L1564.43 446.614L2170 323.111M1 323.111L1564.43 201.133L2170 323.111M1 323.111L1564.43 153.601L2170 323.111M1 323.111L1564.43 41.0312L2170 323.111M1 323.111L1564.43 1L2170 323.111"
+                        stroke="black" stroke-width="1.20552" stroke-dasharray="0px 1px" opacity="0.3" pathLength="1"
+                        stroke-dashoffset="0px"></path>
+                </svg>
+                <div class="flex flex-col gap-4 ">
+                    <h2 class="hero-span font-Roboto text-[36px] sm:text-[68px] lg:text-[96px] font-[500] uppercase sm:leading-[90px] break-words text-center lg:text-left"
+                        style="opacity: 0; transform: translateY(-200px) translateZ(0px);">Fundamentals Of</h2>
+                    <h1
+                        class="text-[36px] sm:text-[68px] lg:text-[96px] font-[500] uppercase sm:leading-[90px] break-words text-center lg:text-left">
+                        JUNO's monetary Policy</h1>
+                </div>
+                <p class="w-full lg:w-1/2 mt-8 font-[500] text-center lg:text-left">Juno, an ERC20 token, ventures
+                    beyond traditional hyper-deflation ideas. It adheres to a novel ultra-deflationary economic policy
+                    that operates autonomously. The smart contract and trading volume exclusively govern its macro
+                    contractions and expansions. This economic strategy aims to foster a setting where all market
+                    players can engage in inflation arbitrage.</p>
+            </div>
+        </div>
+        <div class="relative min-h-screen bg-center bg-no-repeat bg-cover bg-ftBG">
+            <div class="absolute inset-0 flex justify-end w-full h-full" style="opacity: 0;"><img alt="hero queen"
+                    loading="lazy" width="750" height="834" decoding="async" data-nimg="1" style="color: transparent;"
+                    src="divineQueen.44a120b1.png"></div>
+            <div
+                class="absolute inset-0 z-[5] w-full h-full px-2 lg:pl-[3rem] xxl:pl-[8rem] flex flex-col justify-center lg:justify-center pb-[6rem]">
+                <div class="flex flex-col gap-4 xxl:pl-[10rem]">
+                    <h2 class="hero-span font-Roboto text-[36px] md:text-[80px] sm:text-[68px] xl:text-[126px] font-[500] uppercase lg:leading-[120px] break-words text-center lg:text-left"
+                        style="opacity: 0; transform: translateY(-200px) translateZ(0px);">Divine Design:</h2>
+                    <h1
+                        class="italic text-[36px] md:text-[80px] sm:text-[68px] xl:text-[126px] font-[500] uppercase lg:leading-[120px] break-words text-center lg:text-left">
+                        The Goddesses<br class="max-lg:hidden"> Touch</h1>
+                </div>
+            </div>
+        </div>
+        <div class="bg-center bg-no-repeat bg-cover bg-bodyBG ">
+            <div class="flex flex-col items-center justify-center">
+                <div class="w-full h-[400px] bg-center bg-no-repeat bg-cover md:h-screen lg:bg-tokenomicsBG"><img
+                        alt="Tokenomics Section Image" loading="lazy" width="1440" height="900" decoding="async"
+                        data-nimg="1" class="block w-full h-full lg:hidden " style="color: transparent;"
+                        src="tokenomicmanimg.2c34bb0a.png"></div>
+                <div class="items-center lg:flex px-2 lg:pl-[3rem] xxl:pl-[8rem] pr-[1rem]">
+                    <div class="flex-1"><img alt="Tokenomics Section Image" loading="lazy" width="1194" height="571"
+                            decoding="async" data-nimg="1" style="color: transparent;" src="toknomic1.8fa049e5.png">
+                    </div>
+                    <div class="flex-1"><img alt="Tokenomics Section Image" loading="lazy" width="1166" height="572"
+                            decoding="async" data-nimg="1" class="flex-1" style="color: transparent;"
+                            src="toknomic2.89900f34.png"></div>
+                </div>
+                <div
+                    class="lg:flex items-center border-b border-dashed border-[#1E1F25] mt-[2rem] px-2 lg:pl-[3rem] xxl:pl-[8rem] pr-[1rem]">
+                    <div
+                        class="lg:w-[32.0625rem] h-[21.3125rem] flex flex-col justify-end items-start gap-[0.25rem] lg:border-r border-dashed border-[#1E1F25] pb-[0.75rem] max-lg:justify-center max-lg:items-center">
+                        <p class="text-[#1E1F25] text-[0.8135rem] font-[400] leading-normal">Home</p>
+                        <p class="text-[#1E1F25] text-[0.8135rem] font-[400] leading-normal">Features</p>
+                    </div>
+                    <div
+                        class="lg:w-[21.375rem] h-[21.3125rem] flex flex-col justify-center items-center  lg:border-r border-dashed border-[#1E1F25]">
+                        <img alt="Tokenomics Section Image" loading="lazy" width="261" height="261" decoding="async"
+                            data-nimg="1" style="color: transparent;" src="tokenomic3.4a21d362.png"></div>
+                    <div
+                        class="lg:w-[32.0625rem] h-[21.3125rem] flex flex-col justify-end items-start gap-[0.25rem] pb-[1.25rem] pr-[1.25rem] pl-[1.3125rem] max-lg:justify-center max-lg:items-center">
+                        <p class="text-[#1E1F25] text-[0.8135rem] font-[400] leading-normal">Docs</p>
+                        <p class="text-[#1E1F25] text-[0.8135rem] font-[400] leading-normal">Launch App</p>
+                        <div class="flex justify-between items-center w-[100%]">
+                            <p class="text-[#1E1F25] text-[0.8135rem] font-[400] leading-normal">Terms &amp; Conditions
+                            </p>
+                            <h5 class="text-[#1E1F25] text-[0.8135rem] font-[400] leading-normal">© 2023</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:flex items-center mt-[2.5rem] px-2 lg:pl-[3rem] xxl:pl-[8rem] pr-[1rem]">
+                    <div class="flex-1"><img alt="Tokenomics Section Image" loading="lazy" width="1189" height="571"
+                            decoding="async" data-nimg="1" style="color: transparent;" src="toknomic4.33e339a7.png">
+                    </div>
+                    <div class="flex-1"><img alt="Tokenomics Section Image" loading="lazy" width="1188" height="573"
+                            decoding="async" data-nimg="1" style="color: transparent;" src="toknomic5.ec535c93.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-center bg-no-repeat bg-cover bg-bodyBG ">
+            <div class="pt-[4rem] pb-[4rem] ">
+                <h2
+                    class="text-center uppercase text-[#1E1F25] font-[600] text-[2.5rem] md:text-[4rem] xxl:text-[8rem]">
+                    Juno Moneta</h2>
+                <div class="  bg-[url('/images/featurebg.png')] bg-cover bg-no-repeat overflow-hidden pt-[3rem]">
+                    <div class=" px-2 lg:pl-[3rem]  xxl:pl-[8rem] grid grid-cols-1 lg:grid-cols-2 gap-12 ">
+                        <div class="relative max-sm:w-full max-lg:w-[550px] xl:w-[550px] min-h-[400px] mx-auto"><img
+                                alt="Card Image" loading="lazy" width="556" height="407" decoding="async" data-nimg="1"
+                                class="absolute w-full h-full" style="color: transparent;" src="homeCard.c8e4c4d6.png">
+                            <div class="relative inset-0 z-10 flex flex-col w-full h-full px-4 py-8 sm:p-8">
+                                <h4 class="text-white text-[28px] sm:text-[34px] font-[600] capitalize mt-8">JUNO Supply
+                                    Cap and Initial Circulation</h4>
+                                <p class="text-[#CECECE] text-[18px] mt-4 leading-[35px]">Discover the fixed upper limit
+                                    and starting point of JUNO's token supply.</p>
+                            </div>
+                        </div>
+                        <div class="relative max-sm:w-full max-lg:w-[550px] xl:w-[550px] min-h-[400px] mx-auto"><img
+                                alt="Card Image" loading="lazy" width="556" height="407" decoding="async" data-nimg="1"
+                                class="absolute w-full h-full" style="color: transparent;" src="homeCard.c8e4c4d6.png">
+                            <div class="relative inset-0 z-10 flex flex-col w-full h-full px-4 py-8 sm:p-8">
+                                <h4 class="text-white text-[28px] sm:text-[34px] font-[600] capitalize mt-8">Transaction
+                                    Breakdown: Burn, Airdrop, and Allocations</h4>
+                                <p class="text-[#CECECE] text-[18px] mt-4 leading-[35px]">Unpacking how each JUNO
+                                    transaction contributes to burning, airdrops, and fund distribution.</p>
+                            </div>
+                        </div>
+                        <div class="relative max-sm:w-full max-lg:w-[550px] xl:w-[550px] min-h-[400px] mx-auto"><img
+                                alt="Card Image" loading="lazy" width="556" height="407" decoding="async" data-nimg="1"
+                                class="absolute w-full h-full" style="color: transparent;" src="homeCard.c8e4c4d6.png">
+                            <div class="relative inset-0 z-10 flex flex-col w-full h-full px-4 py-8 sm:p-8">
+                                <h4 class="text-white text-[28px] sm:text-[34px] font-[600] capitalize mt-8">JUNO's Turn
+                                    Cycle: Supply Limits and Changes</h4>
+                                <p class="text-[#CECECE] text-[18px] mt-4 leading-[35px]">Exploring the cyclical process
+                                    of JUNO's supply adjustments from minimum to maximum and back.</p>
+                            </div>
+                        </div>
+                        <div class="relative max-sm:w-full max-lg:w-[550px] xl:w-[550px] min-h-[400px] mx-auto"><img
+                                alt="Card Image" loading="lazy" width="556" height="407" decoding="async" data-nimg="1"
+                                class="absolute w-full h-full" style="color: transparent;" src="homeCard.c8e4c4d6.png">
+                            <div class="relative inset-0 z-10 flex flex-col w-full h-full px-4 py-8 sm:p-8">
+                                <h4 class="text-white text-[28px] sm:text-[34px] font-[600] capitalize mt-8">Supply
+                                    Fluctuations: Macro Contractions and Expansions</h4>
+                                <p class="text-[#CECECE] text-[18px] mt-4 leading-[35px]">Understanding JUNO's strategic
+                                    supply modulation for economic stability.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" px-2 lg:pl-[3rem] xxl:pl-[8rem] grid grid-cols-1 my-12">
+                        <div class="relative max-sm:w-full max-lg:w-[550px] xl:w-[550px] min-h-[400px] mx-auto"><img
+                                alt="Card Image" loading="lazy" width="556" height="407" decoding="async" data-nimg="1"
+                                class="absolute w-full h-full" style="color: transparent;" src="homeCard.c8e4c4d6.png">
+                            <div class="relative inset-0 flex flex-col w-full h-full px-4 py-8 sm:p-8">
+                                <h4 class="text-white text-[28px] sm:text-[34px] font-[600] capitalize mt-8">Active
+                                    Participation: JUNO's Inactivity Burn System</h4>
+                                <p class="text-[#CECECE] text-[18px] mt-4 leading-[35px]">Understanding JUNO's strategic
+                                    supply modulation for economic stability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex flex-col items-center xl:flex-row">
+                        <div class="mt-[2rem] px-2 lg:pl-[3rem] xxl:pl-[8rem] ">
+                            <h5
+                                class="hero-span font-Roboto text-[36px] md:text-[4rem] xl:text-[8.64844rem]  font-[500] uppercase xl:leading-[8.5875rem] break-words text-center xl:text-left">
+                                New Era of<br class="hidden xl:block"> Economic<br class="hidden xl:block"> Efficiency
+                            </h5>
+                            <p
+                                class="text-[36px] md:text-[4rem] text-[#000] xl:text-[7.7115rem] font-[500] uppercase xl:leading-[7.59375rem text-center xl:text-left break-words ">
+                                with Smart<br class="hidden xl:block">Deflation</p>
+                        </div>
+                        <div class="xl:mt-[-6rem] xL:ml-[-8rem]"><img alt="Image" loading="lazy" width="491"
+                                height="642" decoding="async" data-nimg="1" style="color: transparent;"
+                                src="newerapic.d490e0ac.png"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lg:ml-[8rem] pb-[2rem] mt-[3rem]" id="faqs">
+            <div class="lg:flex">
+                <div class="flex-1 mt-[4rem] max-lg:px-[1rem]">
+                    <h5
+                        class="text-[#1E1F25] text-[4.4765rem] font-[500] leading-[6.11119rem] uppercase tracking-[-0.32994rem] max-lg:text-center">
+                        FAQs</h5>
+                    <div>
+                        <div class="faq-div mt-[1rem]">
+                            <div class="flex items-center justify-between   cursor-pointer p-[1rem]">
+                                <h5
+                                    class="text-[#1E1F25] text-[1.4285rem] font-[500] leading-normal max-md:text-[14px]">
+                                    What is the tax structure for $JUNO transactions?</h5><svg stroke="currentColor"
+                                    fill="currentColor" stroke-width="0" viewBox="0 0 512 512" font-size="20"
+                                    height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="faq-div mt-[1rem]">
+                            <div class="flex items-center justify-between   cursor-pointer p-[1rem]">
+                                <h5
+                                    class="text-[#1E1F25] text-[1.4285rem] font-[500] leading-normal max-md:text-[14px]">
+                                    Who will get the airdrop?</h5><svg stroke="currentColor" fill="currentColor"
+                                    stroke-width="0" viewBox="0 0 512 512" font-size="20" height="1em" width="1em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="faq-div mt-[1rem]">
+                            <div class="flex items-center justify-between   cursor-pointer p-[1rem]">
+                                <h5
+                                    class="text-[#1E1F25] text-[1.4285rem] font-[500] leading-normal max-md:text-[14px]">
+                                    Total supply Of $JUNO</h5><svg stroke="currentColor" fill="currentColor"
+                                    stroke-width="0" viewBox="0 0 512 512" font-size="20" height="1em" width="1em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="faq-div mt-[1rem]">
+                            <div class="flex items-center justify-between   cursor-pointer p-[1rem]">
+                                <h5
+                                    class="text-[#1E1F25] text-[1.4285rem] font-[500] leading-normal max-md:text-[14px]">
+                                    When token will burn?</h5><svg stroke="currentColor" fill="currentColor"
+                                    stroke-width="0" viewBox="0 0 512 512" font-size="20" height="1em" width="1em"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="faq-div mt-[1rem]">
+                            <div class="flex items-center justify-between   cursor-pointer p-[1rem]">
+                                <h5
+                                    class="text-[#1E1F25] text-[1.4285rem] font-[500] leading-normal max-md:text-[14px]">
+                                    What is the contraction and expansion phase? which phase is currently active?</h5>
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                    font-size="20" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex-1 lg:ml-[4rem] flex justify-center items-center max-lg:mt-[2rem]  max-lg:flex max-lg:justify-center max-lg:items-center">
+                    <img loading="lazy" width="420" height="549" decoding="async" data-nimg="1"
+                        style="color: transparent;" src="faqimg.2e1c802d.png"></div>
+            </div>
+        </div>
+        <div class="pb-[4rem] mt-[1rem] px-2 lg:pl-[3rem] xxl:pl-[8rem] pr-[1rem]">
+            <div class="flex flex-col items-center justify-center mt-12 lg:gap-4 lg:flex-row">
+                <h1
+                    class="text-[36px] sm:text-[68px] lg:text-[86px] font-[500] uppercase sm:leading-[70px] break-words text-center lg:text-left">
+                    Connect with</h1>
+                <h2
+                    class="hero-span font-Roboto text-[36px] sm:text-[68px] lg:text-[86px] font-[500] uppercase sm:leading-[70px] break-words text-center lg:text-left">
+                    JUNO DEFI</h2>
+            </div>
+            <div class="flex items-center justify-center gap-4 mt-8">
+                <div
+                    class="flex items-center justify-center w-12 h-12 transition-all border border-black rounded-full cursor-pointer hover:scale-110 ">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                        class="text-[24px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
+                        </path>
+                    </svg></div>
+                <div
+                    class="flex items-center justify-center w-12 h-12 transition-all border border-black rounded-full cursor-pointer hover:scale-110 ">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512"
+                        class="text-[24px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z">
+                        </path>
+                    </svg></div>
+                <div
+                    class="flex items-center justify-center w-12 h-12 p-3 transition-all border border-black rounded-full cursor-pointer hover:scale-110 ">
+                    <img alt="dex-tools" loading="lazy" width="2174" height="2500" decoding="async" data-nimg="1"
+                        style="color: transparent;" src="dextools.a23ba565.svg"></div>
+                <div
+                    class="flex items-center justify-center w-12 h-12 p-2 transition-all border border-black rounded-full cursor-pointer hover:scale-110 ">
+                    <img alt="uniswap-logo" loading="lazy" width="168" height="194" decoding="async" data-nimg="1"
+                        style="color: transparent;" src="uniswap-logo.fc74aecf.svg"></div>
+                <div
+                    class="flex items-center justify-center w-12 h-12 p-3 transition-all border border-black rounded-full cursor-pointer hover:scale-110 ">
+                    <img alt="uniswap-logo" loading="lazy" width="2500" height="2500" decoding="async" data-nimg="1"
+                        style="color: transparent;" src="eth-logo.4df54c8d.svg"></div>
+            </div>
+        </div>
+    </div>
+    <script src="webpack-72f97f1b0b09da3b.js" async=""></script>
+    <script>(self.__next_f = self.__next_f || []).push([0]); self.__next_f.push([2, null])</script>
+    <script>self.__next_f.push([1, "1:HL[\"/_next/static/media/02205c9944024f15-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n2:HL[\"/_next/static/media/0e4fe491bf84089c-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n3:HL[\"/_next/static/media/627622453ef56b0d-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n4:HL[\"/_next/static/media/7d8c9b0ca4a64a5a-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n5:HL[\"/_next/static/media/8db47a8bf03b7d2f-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n6:HL[\"/"])</script>
+    <script>self.__next_f.push([1, "_next/static/media/90dff3d33e3304f0-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n7:HL[\"/_next/static/media/934c4b7cb736f2a3-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n8:HL[\"/_next/static/media/c5a599930896c67c-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n9:HL[\"/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\na:HL[\"/_next/static/css/6915b6f35d6c2206.css\",\"style\",{\"crossOrigin\":\"\"}]\n0:\"$Lb\"\n"])</script>
+    <script>self.__next_f.push([1, "c:I[3728,[],\"\"]\ne:I[9928,[],\"\"]\nf:I[6954,[],\"\"]\n10:I[7264,[],\"\"]\n12:I[8297,[],\"\"]\n13:I[3060,[\"433\",\"static/chunks/a12756ec-d17578ebf41b21be.js\",\"929\",\"static/chunks/4f9d9cd8-8c58c1643b1f3b8e.js\",\"400\",\"static/chunks/12038df7-98d1fe410ca6f311.js\",\"682\",\"static/chunks/07115393-af0be20b6f2eaa96.js\",\"306\",\"static/chunks/39209d7c-8c234688ea0e55a9.js\",\"420\",\"static/chunks/9081a741-aa2952a4d95fd7bb.js\",\"675\",\"static/chunks/675-2df3309519a92d9e.js\",\"931\",\"static/chunks/app/page-33cfb7fd03a997b9.js\"],\"\"]\n"])</script>
+    <script>self.__next_f.push([1, "b:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/6915b6f35d6c2206.css\",\"precedence\":\"next\",\"crossOrigin\":\"\"}]],[\"$\",\"$Lc\",null,{\"buildId\":\"EpSbrJ5tk4HTh2HVlgJXp\",\"assetPrefix\":\"\",\"initialCanonicalUrl\":\"/\",\"initialTree\":[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],\"initialHead\":[false,\"$Ld\"],\"globalErrorComponent\":\"$e\",\"children\":[null,[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"className\":\"__className_e66fe9 __variable_9bfd88 __variable_c8ec54\",\"children\":[\"$\",\"$Lf\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"loadingScripts\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L10\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[],\"initialChildNode\":[\"$L11\",[\"$\",\"$L12\",null,{\"propsForComponent\":{\"params\":{}},\"Component\":\"$13\",\"isStaticGeneration\":true}],null],\"childPropSegment\":\"__PAGE__\",\"styles\":null}]}]}],null]}]]\n"])</script>
+    <script>self.__next_f.push([1, "d:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"Juno Moneta Defi\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"Juno Moneta Defi App\"}],[\"$\",\"link\",\"4\",{\"rel\":\"icon\",\"href\":\"/favicon/favicon.png\"}],[\"$\",\"meta\",\"5\",{\"name\":\"next-size-adjust\"}]]\n11:null\n"])</script>
+    <script>self.__next_f.push([1, ""])</script><next-route-announcer style="position: absolute;"
+        data-scrapbook-shadowdom="<div aria-live=&quot;assertive&quot; id=&quot;__next-route-announcer__&quot; role=&quot;alert&quot; style=&quot;position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;&quot;></div>"></next-route-announcer>
+    <script
+        data-scrapbook-elem="basic-loader">(function () { var k1 = "data-scrapbook-shadowdom", k2 = "data-scrapbook-canvas", k3 = "data-scrapbook-input-indeterminate", k4 = "data-scrapbook-input-checked", k5 = "data-scrapbook-option-selected", k6 = "data-scrapbook-input-value", k7 = "data-scrapbook-textarea-value", fn = function (r) { var E = r.querySelectorAll ? r.querySelectorAll("*") : r.getElementsByTagName("*"), i = E.length, e, d, s; while (i--) { e = E[i]; if ((d = e.getAttribute(k1)) !== null && !e.shadowRoot && e.attachShadow) { s = e.attachShadow({ mode: 'open' }); s.innerHTML = d; e.removeAttribute(k1); } if ((d = e.getAttribute(k2)) !== null) { (function () { var c = e, g = new Image(); g.onload = function () { c.getContext('2d').drawImage(g, 0, 0); }; g.src = d; })(); e.removeAttribute(k2); } if ((d = e.getAttribute(k3)) !== null) { e.indeterminate = true; e.removeAttribute(k3); } if ((d = e.getAttribute(k4)) !== null) { e.checked = d === 'true'; e.removeAttribute(k4); } if ((d = e.getAttribute(k5)) !== null) { e.selected = d === 'true'; e.removeAttribute(k5); } if ((d = e.getAttribute(k6)) !== null) { e.value = d; e.removeAttribute(k6); } if ((d = e.getAttribute(k7)) !== null) { e.value = d; e.removeAttribute(k7); } if (e.shadowRoot) { fn(e.shadowRoot); } } }; fn(document); })()</script>
+</body>
+
+</html>
